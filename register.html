@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechFest 2026 | Register</title>
+  <meta name="description" content="Register for TechFest 2026 — pick your event, add your team, and confirm your spot.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="brand">
+        <span>
+          TechFest 2026
+          <small>TechFest 2026 · DEPT. OF CSE</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="register.html" aria-current="page">Register</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" style="padding-bottom: 2.5rem;">
+      <div class="wrap hero-content">
+        <h1>Claim your <span>spot</span></h1>
+        <p class="lead">Fill in your details below. Fields marked with an asterisk (*) are required - the browser will flag anything missing or invalid before it lets you submit.</p>
+      </div>
+    </section>
+
+    <section class="section" id="registration-form">
+      <div class="wrap">
+
+        <form class="panel" action="#" method="post">
+
+          <fieldset>
+            <legend>Participant details</legend>
+
+            <div class="field">
+              <label for="fullname">Full name *</label>
+              <input type="text" id="fullname" name="fullname" placeholder="e.g. Ananya Suresh" minlength="3" required>
+            </div>
+
+            <div class="two-col">
+              <div class="field">
+                <label for="email">Email address *</label>
+                <input type="email" id="email" name="email" placeholder="you@college.edu" required>
+              </div>
+              <div class="field">
+                <label for="mobile">Mobile number *</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="10-digit number" pattern="[0-9]{10}" title="Enter a 10-digit mobile number" required>
+                <span class="hint">Format: 10 digits, no spaces or country code.</span>
+              </div>
+            </div>
+
+            <div class="two-col">
+              <div class="field">
+                <label for="dob">Date of birth *</label>
+                <input type="date" id="dob" name="dob" min="1995-01-01" max="2012-12-31" required>
+              </div>
+              <div class="field">
+                <label for="department">Department *</label>
+                <select id="department" name="department" required>
+                  <option value="" selected disabled>Select department</option>
+                  <option value="cse">Computer Science &amp; Engineering</option>
+                  <option value="ece">Electronics &amp; Communication</option>
+                  <option value="eee">Electrical &amp; Electronics</option>
+                  <option value="mech">Mechanical Engineering</option>
+                  <option value="civil">Civil Engineering</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <span style="display:block; font-size:0.88rem; margin-bottom:0.5rem;">Gender *</span>
+              <div class="radio-row">
+                <label><input type="radio" name="gender" value="female" required> Female</label>
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="other" required> Other</label>
+                <label><input type="radio" name="gender" value="prefer-not" required> Prefer not to say</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Events</legend>
+
+            <div class="field">
+              <span style="display:block; font-size:0.88rem; margin-bottom:0.5rem;">Choose one or more events *</span>
+              <div class="check-row">
+                <label><input type="checkbox" name="events" value="codesprint" required> CodeSprint 24</label>
+                <label><input type="checkbox" name="events" value="robo-rumble"> Robo Rumble</label>
+                <label><input type="checkbox" name="events" value="byte-battle"> Byte Battle</label>
+                <label><input type="checkbox" name="events" value="debug-duel"> Debug Duel</label>
+                <label><input type="checkbox" name="events" value="workshops"> Workshops (any)</label>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="teamname">Team name</label>
+              <input type="text" id="teamname" name="teamname" placeholder="Leave blank for solo events">
+              <span class="hint">Only needed for team events like CodeSprint 24 or Robo Rumble.</span>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Anything else</legend>
+            <div class="field">
+              <label for="message">Message / dietary or accessibility needs</label>
+              <textarea id="message" name="message" rows="4" placeholder="Optional - let us know if we can help with anything"></textarea>
+            </div>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Submit registration</button>
+            <button type="reset" class="btn btn-ghost">Clear form</button>
+          </div>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h4>TechFest 2026</h4>
+          <p style="color:var(--text-muted); max-width:40ch; font-size:0.9rem;">Organized by the Department of Computer Science &amp; Engineering.</p>
+        </div>
+        <div>
+          <h4>Site</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Elsewhere</h4>
+          <ul>
+            <li><a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram ↗</a></li>
+            <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter / X ↗</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 TechFest · Dept. of CSE</span>
+      </div>
+    </div>
+  </footer>
+
+  
+</body>
+</html>
